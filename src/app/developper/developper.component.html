@@ -1,0 +1,28 @@
+<div>
+    <table>
+        <tr>
+            <td>Firstname</td>
+            <td>{{developper.firstname}}</td>
+        </tr>
+        <tr>
+            <td>Lastname</td>
+            <td>{{developper.lastname}}</td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>{{developper.age}}</td>
+        </tr>
+        <tr>
+            <td>Sex</td>
+            <td>{{developper.sex}}</td>
+        </tr>
+        <tr>
+            <td>Bio</td>
+            <td>{{developper.bio}}</td>
+        </tr>
+        <tr *ngFor="let skill of developper.skills">
+            <td>Skill</td>
+            <td><app-skill [skill]="skill"></app-skill></td>
+        </tr>        
+    </table>
+</div>
